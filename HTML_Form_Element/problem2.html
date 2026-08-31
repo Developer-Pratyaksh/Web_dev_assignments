@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clinic Appointment Booking</title>
+</head>
+
+<body>
+
+    <h1>Clinic Appointment Booking Form</h1>
+
+    <p>
+        Welcome to our clinic appointment booking page.
+        Please fill in the form below to request an appointment with a doctor.
+    </p>
+
+    <p>
+        <a href="mailto:clinic@example.com">Contact Clinic / Emergency</a>
+    </p>
+
+    <h2>Clinic Timings</h2>
+
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>Opening Time</th>
+            <th>Closing Time</th>
+        </tr>
+
+        <tr>
+            <td>Monday</td>
+            <td>9:00 AM</td>
+            <td>5:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td>9:00 AM</td>
+            <td>5:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>9:00 AM</td>
+            <td>5:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Thursday</td>
+            <td>9:00 AM</td>
+            <td>5:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Friday</td>
+            <td>9:00 AM</td>
+            <td>5:00 PM</td>
+        </tr>
+    </table>
+
+    <h2>Patient Information</h2>
+
+    <form action="#" method="post">
+
+        <label for="patientName">Patient Name:</label>
+        <input type="text"
+               id="patientName"
+               name="patient_name"
+               placeholder="Enter your full name"
+               minlength="3"
+               maxlength="50"
+               required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="example@gmail.com"
+               required>
+        <br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel"
+               id="mobile"
+               name="mobile"
+               placeholder="10 digit mobile number"
+               pattern="[6-9][0-9]{9}"
+               minlength="10"
+               maxlength="10"
+               required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date"
+               id="dob"
+               name="date_of_birth"
+               required>
+        <br><br>
+
+        <label for="patientId">Patient ID (Optional):</label>
+        <input type="text"
+               id="patientId"
+               name="patient_id"
+               placeholder="Enter patient ID"
+               maxlength="15">
+        <br><br>
+
+        <h3>Appointment Details</h3>
+
+        <label for="appointmentDate">Appointment Date:</label>
+        <input type="date"
+               id="appointmentDate"
+               name="appointment_date"
+               required>
+        <br><br>
+
+        <label for="appointmentTime">Appointment Time:</label>
+        <input type="time"
+               id="appointmentTime"
+               name="appointment_time"
+               required>
+        <br><br>
+
+        <label for="doctor">Select Doctor:</label>
+        <select id="doctor" name="doctor" required>
+
+            <option value="">-- Select Doctor --</option>
+            <option value="dr_amit_sharma">
+                Dr. Amit Sharma - General Physician
+            </option>
+
+            <option value="dr_neha_verma">
+                Dr. Neha Verma - Dentist
+            </option>
+
+            <option value="dr_rohit_mehta">
+                Dr. Rohit Mehta - Cardiologist
+            </option>
+
+            <option value="dr_pooja_singh">
+                Dr. Pooja Singh - Dermatologist
+            </option>
+
+            <option value="dr_rahul_kapoor">
+                Dr. Rahul Kapoor - Orthopedic
+            </option>
+
+        </select>
+
+        <br><br>
+
+        <h3>Visit Type</h3>
+
+        <input type="radio"
+               id="newPatient"
+               name="visit_type"
+               value="new_patient"
+               required>
+        <label for="newPatient">New Patient</label>
+
+        <br>
+
+        <input type="radio"
+               id="followUp"
+               name="visit_type"
+               value="follow_up">
+        <label for="followUp">Follow-up</label>
+
+        <br>
+
+        <input type="radio"
+               id="consultation"
+               name="visit_type"
+               value="consultation">
+        <label for="consultation">Consultation</label>
+
+        <br>
+
+        <input type="radio"
+               id="emergency"
+               name="visit_type"
+               value="emergency">
+        <label for="emergency">Emergency</label>
+
+        <h3>Preferred Communication Method</h3>
+
+        <input type="radio"
+               id="communicationEmail"
+               name="communication"
+               value="email"
+               required>
+        <label for="communicationEmail">Email</label>
+
+        <br>
+
+        <input type="radio"
+               id="communicationPhone"
+               name="communication"
+               value="phone">
+        <label for="communicationPhone">Phone</label>
+
+        <br>
+
+        <input type="radio"
+               id="communicationSms"
+               name="communication"
+               value="sms">
+        <label for="communicationSms">SMS</label>
+
+        <br><br>
+
+        <label for="reason">Reason for Visit / Additional Information:</label>
+        <br>
+
+        <textarea id="reason"
+                  name="reason"
+                  rows="6"
+                  cols="50"
+                  placeholder="Enter reason for your visit"></textarea>
+
+        <br><br>
+
+        <input type="checkbox"
+               id="terms"
+               name="appointment_terms"
+               value="accepted"
+               required>
+
+        <label for="terms">
+            I accept the appointment terms and conditions.
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Book Appointment">
+
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>

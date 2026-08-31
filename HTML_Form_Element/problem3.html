@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GLA University Greater Noida - Course Enrollment</title>
+</head>
+
+<body>
+
+    <h1>GLA University Greater Noida</h1>
+
+    <h2>Online Course Enrollment & Student Registration</h2>
+
+    <p>
+        Welcome to the online course registration page of
+        <strong>GLA University Greater Noida</strong>.
+        Students can use this form to register for a technical course.
+    </p>
+
+    <p>
+        <a href="https://github.com/Developer-Pratyaksh/">
+            Visit My GitHub Profile
+        </a>
+    </p>
+
+    <h2>Student Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <label for="studentName">Student Name:</label>
+        <input type="text"
+               id="studentName"
+               name="student_name"
+               placeholder="Enter your full name"
+               minlength="3"
+               maxlength="50"
+               required>
+        <br><br>
+
+        <label for="studentEmail">Email:</label>
+        <input type="email"
+               id="studentEmail"
+               name="student_email"
+               placeholder="example@gmail.com"
+               required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password"
+               id="password"
+               name="password"
+               placeholder="Enter password"
+               minlength="8"
+               maxlength="20"
+               required>
+        <br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel"
+               id="mobile"
+               name="mobile"
+               placeholder="10 digit mobile number"
+               pattern="[6-9][0-9]{9}"
+               minlength="10"
+               maxlength="10"
+               required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date"
+               id="dob"
+               name="date_of_birth"
+               required>
+        <br><br>
+
+        <label for="course">Select Course:</label>
+
+        <select id="course" name="course" required>
+
+            <option value="">-- Select Course --</option>
+
+            <option value="c_programming">
+                C Programming
+            </option>
+
+            <option value="python">
+                Python Programming
+            </option>
+
+            <option value="web_development">
+                Web Development
+            </option>
+
+            <option value="java">
+                Java Programming
+            </option>
+
+            <option value="data_structures">
+                Data Structures
+            </option>
+
+            <option value="database">
+                Database Management
+            </option>
+
+        </select>
+
+        <br><br>
+
+        <label for="batch">Select Batch / Session:</label>
+
+        <select id="batch" name="batch" required>
+
+            <option value="">-- Select Batch --</option>
+            <option value="morning">Morning Batch</option>
+            <option value="afternoon">Afternoon Batch</option>
+            <option value="evening">Evening Batch</option>
+            <option value="weekend">Weekend Batch</option>
+
+        </select>
+
+        <br><br>
+
+        <h3>Learning Preference</h3>
+
+        <input type="radio"
+               id="online"
+               name="learning_mode"
+               value="online"
+               required>
+        <label for="online">Online</label>
+
+        <br>
+
+        <input type="radio"
+               id="offline"
+               name="learning_mode"
+               value="offline">
+        <label for="offline">Offline</label>
+
+        <br>
+
+        <input type="radio"
+               id="hybrid"
+               name="learning_mode"
+               value="hybrid">
+        <label for="hybrid">Hybrid</label>
+
+        <h3>Areas of Interest</h3>
+
+        <input type="checkbox"
+               id="java"
+               name="interest_java"
+               value="java">
+        <label for="java">Java</label>
+
+        <br>
+
+        <input type="checkbox"
+               id="python"
+               name="interest_python"
+               value="python">
+        <label for="python">Python</label>
+
+        <br>
+
+        <input type="checkbox"
+               id="web"
+               name="interest_web"
+               value="web_development">
+        <label for="web">Web Development</label>
+
+        <br>
+
+        <input type="checkbox"
+               id="ds"
+               name="interest_ds"
+               value="data_structures">
+        <label for="ds">Data Structures</label>
+
+        <br>
+
+        <input type="checkbox"
+               id="database"
+               name="interest_database"
+               value="database">
+        <label for="database">Database</label>
+
+        <br><br>
+
+        <label for="education">Education Level:</label>
+
+        <select id="education"
+                name="education_level"
+                required>
+
+            <option value="">-- Select Education Level --</option>
+            <option value="12th">12th</option>
+            <option value="diploma">Diploma</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="postgraduate">Postgraduate</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="college">College / Institution:</label>
+        <input type="text"
+               id="college"
+               name="college"
+               value="GLA University Greater Noida"
+               readonly>
+        <br><br>
+
+        <label for="semester">Current Semester / Year:</label>
+        <input type="number"
+               id="semester"
+               name="semester"
+               min="1"
+               max="8"
+               step="1"
+               placeholder="Enter semester"
+               required>
+        <br><br>
+
+        <label for="experience">Programming Experience (Years):</label>
+        <input type="number"
+               id="experience"
+               name="programming_experience"
+               min="0"
+               max="20"
+               step="1"
+               value="0"
+               required>
+        <br><br>
+
+        <label for="github">GitHub / Portfolio URL:</label>
+        <input type="url"
+               id="github"
+               name="github_url"
+               placeholder="https://github.com/Developer-Pratyaksh">
+        <br><br>
+
+        <label for="goals">Learning Goals:</label>
+        <br>
+
+        <textarea id="goals"
+                  name="learning_goals"
+                  rows="6"
+                  cols="50"
+                  placeholder="Write about what you want to learn"></textarea>
+
+        <br><br>
+
+        <input type="checkbox"
+               id="confirmation"
+               name="confirmation"
+               value="confirmed"
+               required>
+
+        <label for="confirmation">
+            I confirm that the information provided by me is correct.
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Register">
+
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <h2>Course Information</h2>
+
+    <p>
+        Learn more about
+        <a href="https://www.gla.ac.in/">
+            GLA University Greater Noida
+        </a>.
+    </p>
+
+    <p>
+        <strong>Course registration helps students select courses
+        according to their interests and learning goals.</strong>
+    </p>
+
+</body>
+</html>
