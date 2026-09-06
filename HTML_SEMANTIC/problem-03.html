@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Healthcare Clinic Information & Appointment Portal</title>
+</head>
+<body>
+    <header>
+        <h1>CityCare Multi-Specialty Clinic</h1>
+        <p><strong>Information & Appointment Portal</strong></p>
+
+        <nav>
+            <a href="#departments">Departments</a> |
+            <a href="#resources">Patient Resources</a> |
+            <a href="#appointment">Appointment</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Clinic Introduction</h2>
+            <p>CityCare Multi-Specialty Clinic provides healthcare information and appointment-request services.</p>
+            <p><em>This page is informational and does not provide medical diagnosis.</em></p>
+
+            <figure>
+                <a href="#appointment"><img src="images/clinic.jpg" alt="Clinic reception and healthcare facility" width="450"></a>
+                <figcaption>Clinic reception and patient-support area.</figcaption>
+            </figure>
+
+            <figure>
+                <a href="#departments"><img src="images/doctor.jpg" alt="Doctor consulting with a patient" width="450"></a>
+                <figcaption>Professional consultation service.</figcaption>
+            </figure>
+        </section>
+
+        <section id="departments">
+            <h2>Services</h2>
+            <ul>
+                <li>General consultation</li>
+                <li>Preventive health guidance</li>
+                <li>Specialist consultation</li>
+                <li>Follow-up appointments</li>
+                <li>Patient information support</li>
+            </ul>
+
+            <article>
+                <h3>General Consultation</h3>
+                <p>Use the appointment form to request a preferred consultation time.</p>
+                <p><mark>Carry relevant previous records when appropriate.</mark></p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Appointment Process</h2>
+            <ol>
+                <li>Select a department.</li>
+                <li>Select a doctor.</li>
+                <li>Choose a date and time.</li>
+                <li>Provide contact details.</li>
+                <li>Submit the request.</li>
+            </ol>
+
+            <dl>
+                <dt><strong>Consultation</strong></dt>
+                <dd>A scheduled interaction with a healthcare professional.</dd>
+                <dt><strong>Follow-up</strong></dt>
+                <dd>A later appointment related to an earlier consultation.</dd>
+                <dt><strong>OPD</strong></dt>
+                <dd>Outpatient department services.</dd>
+                <dt><strong>Appointment</strong></dt>
+                <dd>A scheduled time for a healthcare consultation.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Doctor Schedule</h2>
+            <table border="1">
+                <caption>Sample Clinic Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Specialist</th><th>Department</th><th>Days</th><th>Time</th><th>Consultation Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Dr. A. Sharma</td><td>General Medicine</td><td>Mon-Wed</td><td>10:00-13:00</td><td>In-person</td></tr>
+                    <tr><td>Dr. R. Singh</td><td>Cardiology</td><td>Tue-Thu</td><td>11:00-14:00</td><td>In-person</td></tr>
+                    <tr><td>Dr. P. Verma</td><td>Dermatology</td><td>Mon-Fri</td><td>12:00-15:00</td><td>In-person</td></tr>
+                    <tr><td>Dr. N. Gupta</td><td>Pediatrics</td><td>Mon-Sat</td><td>09:00-12:00</td><td>In-person</td></tr>
+                    <tr><td>Dr. S. Khan</td><td>Orthopedics</td><td>Wed-Fri</td><td>15:00-18:00</td><td>In-person</td></tr>
+                    <tr><td>Dr. K. Rao</td><td>ENT</td><td>Tue-Sat</td><td>10:00-13:00</td><td>In-person</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <aside id="resources">
+            <h2>Patient Instructions</h2>
+            <p>Arrive before your appointment and carry the information requested by the clinic.</p>
+            <p><strong>Important:</strong> Emergency situations require appropriate emergency medical services.</p>
+            <blockquote>Clear communication between patients and healthcare professionals supports good care.</blockquote>
+        </aside>
+
+        <section>
+            <h2>Information & Disclaimer</h2>
+            <p>Blood oxygen is commonly written as O<sub>2</sub>. Body temperature may be written as 37<sup>°</sup>C.</p>
+            <p><u>Do not use an online form as a replacement for emergency medical care.</u></p>
+        </section>
+
+        <section id="appointment">
+            <h2>Appointment Request</h2>
+            <form action="#" method="post">
+                <label for="patient">Patient Name:</label><br>
+                <input type="text" id="patient" name="patient" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mobile">Mobile:</label><br>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+                <label for="date">Preferred Date:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <label for="time">Preferred Time:</label><br>
+                <input type="time" id="time" name="time" required><br><br>
+
+                <label for="department">Department:</label><br>
+                <select id="department" name="department" required>
+                    <option value="">Select</option>
+                    <option>General Medicine</option>
+                    <option>Cardiology</option>
+                    <option>Dermatology</option>
+                    <option>Pediatrics</option>
+                    <option>Orthopedics</option>
+                    <option>ENT</option>
+                </select><br><br>
+
+                <label for="doctor">Doctor:</label><br>
+                <select id="doctor" name="doctor" required>
+                    <option value="">Select</option>
+                    <option>Dr. A. Sharma</option>
+                    <option>Dr. R. Singh</option>
+                    <option>Dr. P. Verma</option>
+                    <option>Dr. N. Gupta</option>
+                    <option>Dr. S. Khan</option>
+                    <option>Dr. K. Rao</option>
+                </select><br><br>
+
+                <p>Consultation Type:</p>
+                <input type="radio" id="inperson" name="consultation" value="In-person" required>
+                <label for="inperson">In-person</label>
+                <input type="radio" id="online" name="consultation" value="Online">
+                <label for="online">Online</label><br><br>
+
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="0" max="120" required><br><br>
+
+                <label for="reason">Reason / Symptoms:</label><br>
+                <textarea id="reason" name="reason" rows="6" cols="50" required></textarea><br><br>
+
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I agree to the appointment-request terms.</label><br><br>
+
+                <input type="submit" value="Request Appointment">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <hr>
+        <p><strong>CityCare Multi-Specialty Clinic</strong></p>
+        <p>Phone: +91-9000000000 | Email: info@example.com</p>
+        <p>Disclaimer: This page is for educational assignment purposes.</p>
+    </footer>
+</body>
+</html>
